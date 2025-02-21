@@ -8,7 +8,7 @@ This repository presents a comparison of various models evaluated on a specific 
 
 ### Models Overview
 
-- **Regression**: A baseline regression approach.
+- **Logistic Regression**: A baseline regression approach.
 - **XGBoost**: An ensemble method using gradient boosting.
 - **LSTM**: Long Short-Term Memory network, particularly useful for sequential data.
 - **CNN1d**: A one-dimensional Convolutional Neural Network.
@@ -17,10 +17,14 @@ This repository presents a comparison of various models evaluated on a specific 
 
 ## Evaluation Metrics
 
-| Metric       | Regression | XGBoost | LSTM | CNN1d | CNN2d | ResNet50 |
-|--------------|------------|---------|------|-------|-------|----------|
-| **Accuracy** | 0.88       | 0.76    | 0.78 | 0.88  | 0.84  | 0.77     |
-| **Precision**| 0.86       | 0.82    | 0.82 | 0.85  | 0.82  | 0.71     |
-| **Recall**   | 0.88       | 0.62    | 0.68 | 0.93  | 0.91  | 0.95     |
-| **F1 Score** | 0.87       | 0.70    | 0.72 | 0.88  | 0.86  | 0.82     |
+| Model               | Accuracy | Precision | Recall  | F1 Score |
+|---------------------|----------|-----------|---------|----------|
+| Logistic Regression | **0.88** | **0.86**  | 0.88    | 0.87     |
+| XGBoost             | 0.76     | 0.82      | 0.62    | 0.70     |
+| LSTM                | 0.78     | 0.82      | 0.68    | 0.72     |
+| CNN1d               | **0.88** | 0.85      | 0.93    | **0.88** |
+| CNN2d               | 0.84     | 0.82      | 0.91    | 0.86     |
+| ResNet50            | 0.77     | 0.71      | **0.95**| 0.82     |
+
+
 
