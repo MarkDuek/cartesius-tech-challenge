@@ -4,27 +4,63 @@ This project involves building and evaluating predictive models for stock prices
 
 ## Model Performance Comparison
 
-This repository presents a comparison of various models evaluated on a specific dataset. The table below summarizes key performance metrics, including Accuracy, Precision, Recall, and F1 Score, for each model.
+This repository presents a comparison of various models evaluated on a specific dataset. The table below summarizes key performance metrics, including Accuracy, Precision, Recall, and F1 Score, for each stock model.
 
 ### Models Overview
 
-- **Logistic Regression**: A baseline regression approach.
+- **Logistic Regression**: A baseline logistic regression approach.
 - **XGBoost**: An ensemble method using gradient boosting.
 - **LSTM**: Long Short-Term Memory network, particularly useful for sequential data.
 - **CNN1d**: A one-dimensional Convolutional Neural Network.
 - **CNN2d**: A two-dimensional Convolutional Neural Network.
 - **ResNet50**: A pre-trained deep residual network with 50 layers, known for its strong performance in image recognition tasks.
 
-## Evaluation Metrics
+### BBAS3.SA
 
-| Model               | Accuracy | Precision | Recall  | F1 Score |
-|---------------------|----------|-----------|---------|----------|
-| Logistic Regression | **0.88** | **0.86**  | 0.88    | 0.87     |
-| XGBoost             | 0.76     | 0.82      | 0.62    | 0.70     |
-| LSTM                | 0.78     | 0.82      | 0.68    | 0.72     |
-| CNN1d               | **0.88** | 0.85      | 0.93    | **0.88** |
-| CNN2d               | 0.84     | 0.82      | 0.91    | 0.86     |
-| ResNet50            | 0.77     | 0.71      | **0.95**| 0.82     |
+| Model                | Accuracy | Precision | Recall  | F1 Score | Portfolio Value |
+|----------------------|----------|-----------|---------|----------|-----------------|
+| Logistic Regression  | **0.89** | 0.84      | 0.90    | 0.87     | R$61876.30      |
+| XGBoost              | 0.62     | 0.53      | **0.91**| 0.67     | R$37722.00      |
+| LSTM                 | 0.88     | **0.85**  | 0.86    | 0.85     | **R$62626.40**  |
+| CNN1d                | 0.88     | **0.85**  | 0.88    | 0.86     | R$62045.90      |
+| CNN2d                | 0.88     | 0.88      | **0.92**| **0.90** | R$11669.61      |
+| ResNet50             | **0.89** | **0.91**  | 0.90    | **0.90** | R$13445.63      |
 
+---
 
+### CSNA3.SA
 
+| Model                | Accuracy | Precision | Recall  | F1 Score | Portfolio Value |
+|----------------------|----------|-----------|---------|----------|-----------------|
+| Logistic Regression  | 0.88     | 0.81      | **0.94**| 0.87     | **R$304121.20** |
+| XGBoost              | 0.70     | 0.60      | 0.89    | 0.72     | R$106843.43     |
+| LSTM                 | 0.88     | 0.82      | 0.90    | 0.86     | R$278840.65     |
+| CNN1d                | **0.89** | 0.87      | 0.86    | 0.86     | R$249093.74     |
+| CNN2d                | **0.89** | **0.95**  | 0.85    | **0.90** | R$13436.11      |
+| ResNet50             | 0.86     | 0.90      | 0.86    | 0.88     | R$14276.67      |
+
+---
+
+### PETR4.SA
+
+| Model                | Accuracy | Precision | Recall  | F1 Score | Portfolio Value |
+|----------------------|----------|-----------|---------|----------|-----------------|
+| Logistic Regression  | 0.86     | 0.86      | 0.88    | **0.87** | R$149479.20     |
+| XGBoost              | 0.67     | 0.83      | 0.46    | 0.59     | R$39653.37      |
+| LSTM                 | 0.86     | 0.84      | **0.89**| **0.87** | **R$153745.39** |
+| CNN1d                | **0.87** | **0.87**  | 0.87    | **0.87** | R$147650.60     |
+| CNN2d                | 0.86     | 0.83      | **0.90**| 0.86     | R$21443.63      |
+| ResNet50             | 0.84     | 0.85      | 0.83    | 0.84     | R$21780.42      |
+
+---
+
+### VALE3.SA
+
+| Model                | Accuracy | Precision | Recall  | F1 Score | Portfolio Value |
+|----------------------|----------|-----------|---------|----------|-----------------|
+| Logistic Regression  | 0.87     | 0.89      | 0.84    | 0.87     | **R$88830.09**  |
+| XGBoost              | 0.59     | 0.84      | 0.22    | 0.35     | R$16404.33      |
+| LSTM                 | 0.81     | 0.89      | 0.72    | 0.79     | R$61597.02      |
+| CNN1d                | **0.89** | **0.90**  | 0.86    | **0.88** | R$86474.91      |
+| CNN2d                | 0.80     | 0.72      | **0.98**| 0.83     | R$17737.00      |
+| ResNet50             | 0.76     | 0.68      | **0.98**| 0.80     | R$19697.92      |
